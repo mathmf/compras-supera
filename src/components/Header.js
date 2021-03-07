@@ -9,7 +9,7 @@ const Header = () => {
 	
 	return(
 
-	<nav className="navbar navbar-expand-lg navbar-light bg-light">
+	<nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: "#e3f2fd"}}>
 		<a className="navbar-brand" href="#">Navbar</a>
 		<div className="collapse navbar-collapse" id="navbarNav">
 			<ul className="navbar-nav me-auto ">

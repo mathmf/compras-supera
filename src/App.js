@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import Routes from './components/Routes';
+import ProductsContextProvider from './context/ProductsContext';
 
 function App() {
   return (
     <div className="App">
-		<main>
+		<ProductsContextProvider>
             <Routes/>
-        </main>
+        </ProductsContextProvider>
     </div>
   );
 }

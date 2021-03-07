@@ -1,5 +1,7 @@
 import React from 'react'
 import Header from '../components/Header';
+import SortDropdown from '../components/SortDropdown';
+import ProductsDeck from '../components/ProductsDeck';
 
 const Shop = () => {
 	
@@ -8,6 +10,8 @@ const Shop = () => {
 	<div>
 	<Header/>
 	<h1>Shop</h1>
+	<SortDropdown/>
+	<ProductsDeck/>
 	</div>
 	
 	)
