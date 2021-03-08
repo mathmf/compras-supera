@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/compras-supera/static/css/main.a9215a6c.chunk.css",
-    "main.js": "/compras-supera/static/js/main.249f3815.chunk.js",
-    "main.js.map": "/compras-supera/static/js/main.249f3815.chunk.js.map",
+    "main.js": "/compras-supera/static/js/main.307d30a4.chunk.js",
+    "main.js.map": "/compras-supera/static/js/main.307d30a4.chunk.js.map",
     "runtime-main.js": "/compras-supera/static/js/runtime-main.2c5987aa.js",
     "runtime-main.js.map": "/compras-supera/static/js/runtime-main.2c5987aa.js.map",
-    "static/js/2.917d3f49.chunk.js": "/compras-supera/static/js/2.917d3f49.chunk.js",
-    "static/js/2.917d3f49.chunk.js.map": "/compras-supera/static/js/2.917d3f49.chunk.js.map",
+    "static/js/2.3873bbbd.chunk.js": "/compras-supera/static/js/2.3873bbbd.chunk.js",
+    "static/js/2.3873bbbd.chunk.js.map": "/compras-supera/static/js/2.3873bbbd.chunk.js.map",
     "static/js/3.68e17602.chunk.js": "/compras-supera/static/js/3.68e17602.chunk.js",
     "static/js/3.68e17602.chunk.js.map": "/compras-supera/static/js/3.68e17602.chunk.js.map",
     "index.html": "/compras-supera/index.html",
     "static/css/main.a9215a6c.chunk.css.map": "/compras-supera/static/css/main.a9215a6c.chunk.css.map",
-    "static/js/2.917d3f49.chunk.js.LICENSE.txt": "/compras-supera/static/js/2.917d3f49.chunk.js.LICENSE.txt",
+    "static/js/2.3873bbbd.chunk.js.LICENSE.txt": "/compras-supera/static/js/2.3873bbbd.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/compras-supera/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2c5987aa.js",
-    "static/js/2.917d3f49.chunk.js",
+    "static/js/2.3873bbbd.chunk.js",
     "static/css/main.a9215a6c.chunk.css",
-    "static/js/main.249f3815.chunk.js"
+    "static/js/main.307d30a4.chunk.js"
   ]
 }
