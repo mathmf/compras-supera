@@ -33,7 +33,7 @@ const Shop = () => {
 	return(
 	<div>
 	<Header/>
-	<h1>Shop</h1>
+	<h1>Loja</h1>
 	{typeof games == 'undefined' &&
 	<h1>Carregando Loja</h1>}
 	{typeof games !== 'undefined' && games.length > 0  &&
