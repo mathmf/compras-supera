@@ -1,18 +1,20 @@
 import React, { createContext, useReducer } from 'react';
 import ProductsReducer from './ProductsReducer';
-import Products from '../data/products.json';
 
 export const ProductsContext = createContext()
 
 
 
-  
-const initialState = { games: [...Products], cart :[],count: 0, total : 0};
+
+const initialState = { games: [], cart :[],count: 0, total : 0};
 
 const ProductsContextProvider = ({children}) => {
 
     const [state,dispatch] = useReducer(ProductsReducer,initialState);
 	
+	const setGames = payload =>{
+		dispatch({type: 'SET_GAMES', payload})
+	}
 	const sortByPrice = payload => {
         dispatch({type: 'SORT_BY_PRICE', payload})
     }
@@ -36,7 +38,8 @@ const ProductsContextProvider = ({children}) => {
     }
 	
 	const contextValues = {
-        sortByPrice,
+        setGames,
+		sortByPrice,
         sortByScore,
         sortByName,
 		increase,

@@ -14,6 +14,7 @@ const ProductsDeck = () => {
 	<div className="container">
 		<div className="row">
 		{
+				
 				games.map(game =>(
 					<div className="col-sm-4">
 						<ProductCard key={game.id} game={game}/>

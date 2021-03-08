@@ -23,6 +23,23 @@ function sortDesc(arr, field) {
    })
 }
 
+export const getData = () =>{
+	fetch('data/products.json').then(
+    function(res){
+    console.log (res.json())
+  }).then(function(data){
+	  
+    return(data)
+  }).catch(
+    function(err){
+      console.log(err, ' error')
+    }
+  ) 
+}
+
+
+
+ 
 const ProductsReducer = (state, action) => {
 	
 	let sortedArr;
@@ -31,6 +48,11 @@ const ProductsReducer = (state, action) => {
 	let t;
 	
 	switch (action.type) {
+		case "SET_GAMES":
+			return {
+                ...state,
+				games : [...action.payload],
+            }
         case "SORT_BY_PRICE":
             sortedArr = action.payload.direction === "asc" ?
 			   sortAsc(state.games, 'price') :
