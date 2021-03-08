@@ -128,6 +128,13 @@ const ProductsReducer = (state, action) => {
 				count: c,
 				total: t
             }
+		case "CLEAR":
+			return{
+				...state,
+				cart : [],
+				count: 0,
+				total:0
+			}
         default:
             return state
 	 }

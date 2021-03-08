@@ -36,6 +36,9 @@ const ProductsContextProvider = ({children}) => {
     const removeItem = payload => {
         dispatch({type: 'REMOVE_ITEM', payload})
     }
+	const clear = () => {
+        dispatch({type: 'CLEAR'})
+    }
 	
 	const contextValues = {
         setGames,
@@ -46,6 +49,7 @@ const ProductsContextProvider = ({children}) => {
 		decrease,
 		addItem,
 		removeItem,
+		clear,
         ...state
     } 
 

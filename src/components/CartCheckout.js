@@ -3,7 +3,7 @@ import {ProductsContext} from '../context/ProductsContext';
 
 const CartCheckout = () => {
 
-	const {cart, count, total} = useContext(ProductsContext);
+	const {cart, count, total,clear} = useContext(ProductsContext);
 
 	return(
 		<div className="d-inline-flex justify-content-center" >
@@ -28,8 +28,12 @@ const CartCheckout = () => {
 							total < 250  &&
 							<h4 className=" mb-3 txt-right">Total : {(total+count*10).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</h4>
 						}
+						<div className="row justify-content-around">
+						<button type="button" className="mt-auto  btn btn-lg  btn-danger"
+						onClick={() => clear()}> Limpar  </button>
 						<button type="button" className="mt-auto  btn btn-lg  btn-primary"
-						> Comprar </button>
+						style={{display: "inline-block",verticalAlign: "top"}}> Comprar </button>
+						</div>
 				</div>
 			</div>
 		</div>
