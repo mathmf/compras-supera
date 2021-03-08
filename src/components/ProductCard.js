@@ -1,7 +1,13 @@
-import React  from 'react'
+import React , { useContext } from 'react'
+import {ProductsContext} from '../context/ProductsContext';
 
 const ProductCard = ({game}) => {
 	
+	const {addItem , cart , increase} = useContext(ProductsContext);
+	
+	const isInCart = game => {
+        return !!cart.find(item => item.id === game.id);
+    }
 	
 	return(
 	
@@ -14,7 +20,19 @@ const ProductCard = ({game}) => {
 			<h4 className="card-title">{game.price.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</h4>
 			
 			<p className="card-text"><small >{"nota :" + game.score}</small></p>
-			<button type="button" className="mt-auto  btn btn-lg btn-block btn-primary">Adicionar ao Carrinho </button>
+				
+				{
+					isInCart(game) && 
+					<button type="button" className="mt-auto  btn btn-lg btn-block btn-primary"
+					onClick={() => increase(game)}> Adicionar Outro </button>
+				}
+				
+				{
+					!isInCart(game) && 
+					<button type="button" className="mt-auto  btn btn-lg btn-block btn-primary"
+					onClick={() => addItem(game)}> Adicionar ao Carrinho </button>
+				}
+			
 		</div>            
     </div>
 	
