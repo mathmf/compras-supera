@@ -7,7 +7,7 @@ const CartTable = () => {
 	const {cart} = useContext(ProductsContext);
 	
 	return ( 
-        <table class="table table-striped">
+        <table className="table table-striped">
 			<thead>
 				<tr>
 					<th scope="col">Imagem</th>

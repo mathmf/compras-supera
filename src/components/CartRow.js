@@ -18,7 +18,8 @@ const CartRow = ({game}) => {
 		<td>
 			<button 
                 onClick={() => increase(game)}
-                className="btn btn-primary btn-sm mr-2 mb-1">
+                className="btn btn-primary btn-sm mr-2 mb-1"
+				style={{ width: "30px"}}>
                     +
             </button>
 			
@@ -28,7 +29,8 @@ const CartRow = ({game}) => {
 				 game.quantity > 1 &&
 				 <button
 				onClick={() => decrease(game)}
-				className="btn btn-danger btn-sm mb-1">
+				className="btn btn-danger btn-sm mb-1"
+				style={{ width: "30px", marginLeft: "10px"}}>
 					-
 				</button>
 			}
@@ -37,7 +39,8 @@ const CartRow = ({game}) => {
 				 game.quantity === 1 &&
 				 <button
 				onClick={() => removeItem(game)}
-				className="btn btn-danger btn-sm mb-1">
+				className="btn btn-danger btn-sm mb-1"
+				style={{ width: "30px" ,marginLeft: "10px"}}>
 					-
 				</button>
 			}
